@@ -25,6 +25,19 @@ public class CalculatorTest {
 	}
 
 	@Test
+	public void testAdd() {
+		int a = 4321;
+		int b = 1234;
+				
+		Calculator cal = new Calculator();
+		int actual = cal.add(a, b); 
+				 
+		int expected = 5555;
+		assertEquals (expected, actual);
+			
+	}
+	
+	@Test
 	public void testSubstract() {
 		int a = 4321;
 		int b = 1234;
@@ -35,6 +48,32 @@ public class CalculatorTest {
 		int expected = 3087;
 		assertEquals (expected, actual);
 		}
+	
+	@Test
+	public void testMultiply() {
+		int a = 6;
+		int b = 9;
+				
+		Calculator cal = new Calculator();
+		int actual = cal.multiply(a, b); 
+				 
+		int expected = 54;
+		assertEquals (expected, actual);
+			
+	}
+	
+	@Test
+	public void testDivide() {
+		int a = 21;
+		int b = 3;
+				
+		Calculator cal = new Calculator();
+		int actual = cal.divide(a, b); 
+				 
+		int expected = 7;
+		assertEquals (expected, actual);
+			
+	}
 	
 	
 
